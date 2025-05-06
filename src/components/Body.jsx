@@ -13,7 +13,7 @@ const Body = () => {
           <button>Get Started</button>
         </div>
         <div className='secondhalf'>
-          <p>Right half content goes here...</p>
+          <video src=""></video>
         </div>
       </div>
     </>

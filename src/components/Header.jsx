@@ -8,7 +8,10 @@ const Header = () => {
 
   return (
     <div className="firstline">
+      <div className='logoname'>
       <img src={logoImg} alt="Logo" className="logo" />
+      <h2 className='Name'>Bite Recap</h2>
+      </div>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         <FaBars />
       </button>
