@@ -1,11 +1,13 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
+
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <footer className="footer">
+      <h3>Know more, watch less</h3>
+      <p className="footer-bottom">&copy; {new Date().getFullYear()} Propacity. All rights reserved.</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -40,7 +40,7 @@ const GettingStarted = () => {
 
   return (
     <div className="getting-started">
-      <h1>Get Started</h1>
+      <h1>Getting Started</h1>
       <p>Paste a link or drag and drop a link here:</p>
 
       {/* Input field to paste a link */}
