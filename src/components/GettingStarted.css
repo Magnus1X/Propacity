@@ -1,0 +1,73 @@
+.getting-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 30px; /* Increased padding */
+  }
+  
+  h1 {
+    font-size: 3rem; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin */
+  }
+  
+  p {
+    font-size: 1.25rem; /* Increased font size */
+    margin: 15px 0; /* Increased margin */
+  }
+  
+  .input-link {
+    width: 350px; /* Increased width */
+    padding: 15px; /* Increased padding */
+    font-size: 1.25rem; /* Increased font size */
+    margin-bottom: 25px; /* Increased margin */
+    border: 2px solid #ccc;
+    border-radius: 8px; /* Slightly larger border radius */
+  }
+  
+  .drag-area {
+    width: 350px; /* Increased width */
+    height: 130px; /* Increased height */
+    border: 2px dashed #aaa;
+    border-radius: 8px; /* Slightly larger border radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dragging {
+    background-color: #e1f5fe;
+  }
+  
+  .drag-area p {
+    font-size: 1.25rem; /* Increased font size */
+    color: #666;
+  }
+  
+  .get-summary-btn {
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.25rem; /* Increased font size */
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 8px; /* Slightly larger border radius */
+    cursor: pointer;
+    margin-top: 30px; /* Increased margin */
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-summary-btn:hover {
+    background-color: darkred;
+  }
+  
+  .summary {
+    margin-top: 30px; /* Increased margin */
+    font-size: 1.5rem; /* Increased font size */
+    color: #333;
+    font-weight: bold;
+  }
+  

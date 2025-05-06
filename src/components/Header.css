@@ -1,0 +1,82 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.firstline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.logo {
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-right: 20px;
+    flex-wrap: wrap; /* wrap for smaller screens */
+}
+
+.nav li {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .firstline {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .nav li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav li {
+        font-size: 16px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,89 @@
+.fullbody {
+    display: flex;
+    height: 100vh;
+    padding-top: 0;
+    flex-wrap: wrap; /* Enable wrap on smaller screens */
+  }
+  
+  /* Left Half */
+  .firsthalf {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-width: 300px;
+  }
+  
+  .firsthalf h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .firsthalf button {
+    padding: 14px 28px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .firsthalf button:hover {
+    background-color: darkred;
+  }
+  
+  /* Right Half */
+  .secondhalf {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-width: 300px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .fullbody {
+      flex-direction: column;
+      height: auto; /* Let height grow with content */
+    }
+  
+    .firsthalf, .secondhalf {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .firsthalf h1 {
+      font-size: 2.5rem;
+    }
+  
+    .firsthalf button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .firsthalf h1 {
+      font-size: 2rem;
+    }
+  
+    .firsthalf button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .secondhalf {
+      padding: 20px;
+    }
+  }
+  
