@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <h3>Know more, watch less</h3>
-      <p className="footer-bottom">&copy; {new Date().getFullYear()} Propacity. All rights reserved.</p>
+      <p className="footer-bottom">&copy; {new Date().getFullYear()} Bite Recap. All rights reserved.</p>
     </footer>
   );
 };

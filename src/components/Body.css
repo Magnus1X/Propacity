@@ -1,6 +1,6 @@
 .fullbody {
     display: flex;
-    height: 100vh;
+    height: 540px;
     padding-top: 0;
     flex-wrap: wrap;
   }

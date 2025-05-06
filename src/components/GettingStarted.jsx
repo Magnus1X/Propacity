@@ -4,7 +4,7 @@ import './GettingStarted.css'
 const GettingStarted = () => {
   const [link, setLink] = useState('')
   const [dragging, setDragging] = useState(false)
-  const [summary, setSummary] = useState('') // To store the summary
+  const [summary, setSummary] = useState('') 
 
   const handleLinkChange = (e) => {
     setLink(e.target.value)
