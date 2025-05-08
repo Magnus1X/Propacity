@@ -1,126 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .getting-started {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 730px;
-    padding: 30px;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 730px;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+
+.input-link {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.drag-area {
+  width: 100%;
+  max-width: 350px;
+  height: 130px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.dragging {
+  background-color: #e1f5fe;
+}
+
+.drag-area p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.get-summary-btn {
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.get-summary-btn:hover {
+  background-color: darkred;
+}
+
+.summary {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
   h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2.2rem;
   }
-  
-  p {
-    font-size: 1.25rem;
-    margin: 15px 0;
-  }
-  
-  .input-link {
-    width: 100%;
-    max-width: 350px;
-    padding: 15px;
-    font-size: 1.25rem;
-    margin-bottom: 25px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-  }
-  
+
+  .input-link,
   .drag-area {
-    width: 100%;
-    max-width: 350px;
-    height: 130px;
-    border: 2px dashed #aaa;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
+    max-width: 300px;
   }
-  
-  .dragging {
-    background-color: #e1f5fe;
-  }
-  
-  .drag-area p {
-    font-size: 1.25rem;
-    color: #666;
-  }
-  
+
   .get-summary-btn {
-    padding: 15px 30px;
-    font-size: 1.25rem;
-    color: white;
-    background-color: red;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    padding: 12px 24px;
   }
-  
-  .get-summary-btn:hover {
-    background-color: darkred;
-  }
-  
+
   .summary {
-    margin-top: 30px;
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
+    font-size: 1.25rem;
   }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.2rem;
-    }
-  
-    .input-link,
-    .drag-area {
-      max-width: 300px;
-    }
-  
-    .get-summary-btn {
-      font-size: 1.1rem;
-      padding: 12px 24px;
-    }
-  
-    .summary {
-      font-size: 1.25rem;
-    }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
   }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1.8rem;
-    }
-  
-    .input-link,
-    .drag-area {
-      max-width: 260px;
-      height: 120px;
-    }
-  
-    .drag-area p {
-      font-size: 1rem;
-    }
-  
-    .get-summary-btn {
-      font-size: 1rem;
-      padding: 10px 20px;
-    }
-  
-    .summary {
-      font-size: 1.1rem;
-    }
+
+  .input-link,
+  .drag-area {
+    max-width: 260px;
+    height: 120px;
   }
-  
+
+  .drag-area p {
+    font-size: 1rem;
+  }
+
+  .get-summary-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .summary {
+    font-size: 1.1rem;
+  }
+}
